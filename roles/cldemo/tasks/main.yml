@@ -15,6 +15,7 @@
     - curl
     - man
     - git
+    - ipmitool
 
 - name: add brightbox and ansible ppa
   apt_repository:  repo={{item}}
