@@ -2,7 +2,7 @@
 ravello: true
 wbench_hostname: 'oob-mgmt-server'
 wbench_user: 'cumulus'
-wbench_passwd: '$6$wJ9OETRI$KX2hMXIuGXtXjMQwH58AsFWpQRnSHKT2OF/6GfPSxqD4e.kF.eyUQeWhnOAg5OxEuCHsOLYybweFv3HmPdBw7/'
+wbench_passwd: '$6$FGWDYwO9$VYHJSnnajoVNfOofL1ULWeG74fBf7/I5h.Gnm4meL1fG9Udw9JlAThqGtlG8JwHY7C4yOBEVJCWKDQ1LbE/AS1'
 wbench_eth1_network: '192.168.0.0'
 wbench_eth1_ip: '192.168.0.254'
 wbench_eth1_mask: '255.255.255.0'
