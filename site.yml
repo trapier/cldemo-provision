@@ -1,6 +1,6 @@
 ---
   - hosts: all
-    sudo: True
+    become: yes
     roles:
       - { role: users, tags: 'users' }
       - { role: network, tags: 'network' }

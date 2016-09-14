@@ -17,5 +17,5 @@
               line="/sbin/iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE"
 
 - name: run rc.local to start nat forwarding
-  sudo: yes
+  become: yes
   command: /bin/bash /etc/rc.local
