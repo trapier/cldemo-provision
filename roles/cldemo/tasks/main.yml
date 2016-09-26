@@ -17,11 +17,6 @@
     - git
     - ipmitool
 
-- name: add brightbox and ansible ppa
-  apt_repository:  repo={{item}}
-  with_items:
-    - ppa:brightbox/ruby-ng
-
 - name: install bash-completion and paramiko (for helpers)
   apt: name={{ item }}
   with_items:
