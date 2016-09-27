@@ -5,7 +5,7 @@
         generate_ssh_key="{{create_key}}"
         shell='/bin/bash'
 
-- name: set wbench user user ability to run sudo with a passwd
+- name: set wbench user user ability to run sudo without a passwd
   copy: content="{{wbench_user}} ALL=(ALL) NOPASSWD:ALL"
         dest="/etc/sudoers.d/10_{{wbench_user}}"
         validate="/usr/sbin/visudo -cf %s"
