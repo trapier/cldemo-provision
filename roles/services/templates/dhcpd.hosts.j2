@@ -4,6 +4,5 @@
 host {{hostname}} {
   hardware ethernet {{ dhcpattr.mac }};
   fixed-address {{ dhcpattr.ip }};
-  option host-name "{{hostname}}";
 }
 {% endfor %}
