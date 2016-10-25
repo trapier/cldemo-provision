@@ -1,8 +1,10 @@
 - name: install sources.list. may use apt-cacher if ubuntu_apt_server var is set
   template: src=apt_sources.list.j2  dest=/etc/apt/sources.list
+  register: sources
 
 - name: run apt-get update
   apt: update_cache=yes
+  when: sources.changed
 
 - name: install service packages
   apt: name={{item}} state=present
